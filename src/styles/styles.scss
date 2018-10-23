@@ -1,10 +1,8 @@
 @import '~loaders.css/src/animations/ball-scale-multiple';
 @import 'settings';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 100%;
-}
+body { font-family: 'Open Sans', sans-serif; }
 
 .loading-wrapper {
   align-items: center;
@@ -16,4 +14,78 @@ body {
   // These two classes are required by react-loaders
   .loader-hidden { display: none; }
   .loader-active { display: block; }
+}
+
+
+.app-preview-container {
+  float: right;
+  width: 50%;
+}
+
+.app-logo-container,
+.header-title-container {
+  padding: 10px;
+}
+
+.landing-left-side {
+  float: left;
+  padding: 50px 175px;
+  text-align: center;
+  width: 50%;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.sub-header-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.78;
+}
+
+.app-description {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.86;
+}
+
+[type='email'],
+[type='password'],
+select {
+  border: solid 1px black;
+  font-size: 10px;
+  height: 40px;
+  margin: 0 auto;
+  width: 190px;
+}
+
+.uppercase { text-transform: uppercase; }
+
+.field-container { padding: 10px 0; }
+
+.submit-button {
+  background-color: black;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  height: 40px;
+  letter-spacing: 1.7px;
+  margin: 10px 0;
+  width: 190px;
+}
+
+.form-separator {
+  border: solid 0.5px black;
+  height: 0.5px;
+  width: 120px;
+}
+
+.sign-up-link, .sign-in-link {
+  color: black;
+  font-size: 11px;
+  font-weight: 600;
 }

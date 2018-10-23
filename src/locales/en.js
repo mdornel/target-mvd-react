@@ -4,13 +4,16 @@ export default {
 
   'login.form.email': 'Email',
   'login.form.password': 'Password',
-  'login.form.submit': 'Submit',
+  'login.form.submit': 'Sign in',
 
   'login.forgot_password': 'Forgot your password?',
 
   'signup.title': 'SIGN UP',
   'signup.signin': 'Sign in',
   'signup.form.passconfirmation': 'Password confirmation',
+  'signup.form.gender': 'Gender',
+  'signup.form.submit': 'Sign up',
+
 
   'logout.button': 'LOGOUT',
 
