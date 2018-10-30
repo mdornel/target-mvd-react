@@ -24,7 +24,7 @@ export default class Input extends PureComponent {
 
     return (
       <div>
-        {label && <label>{label}</label>}
+        {label && <label className="uppercase">{label}</label>}
         <div>
           <input {...input} {...{ placeholder, type }} />
           {touched && error &&

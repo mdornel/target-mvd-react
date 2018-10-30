@@ -1,10 +1,9 @@
 @import '~loaders.css/src/animations/ball-scale-multiple';
 @import 'settings';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import 'authentication';
 
-body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 100%;
-}
+body { font-family: 'Open Sans', sans-serif; }
 
 .loading-wrapper {
   align-items: center;
@@ -17,3 +16,18 @@ body {
   .loader-hidden { display: none; }
   .loader-active { display: block; }
 }
+
+.app-preview-container {
+  float: right;
+  width: 50%;
+}
+
+.landing-left-side {
+  float: left;
+  padding: 50px 175px;
+  text-align: center;
+  width: 50%;
+}
+
+.uppercase { text-transform: uppercase; }
+

@@ -31,7 +31,7 @@ export class LoginForm extends PureComponent {
     return (
       <form onSubmit={handleSubmit}>
         {error && <strong>{error}</strong>}
-        <div>
+        <div className="field-container">
           <Field
             name="email"
             label={intl.formatMessage(messages.email)}
@@ -39,7 +39,7 @@ export class LoginForm extends PureComponent {
             type="email"
           />
         </div>
-        <div>
+        <div className="field-container">
           <Field
             name="password"
             label={intl.formatMessage(messages.password)}
@@ -47,7 +47,7 @@ export class LoginForm extends PureComponent {
             type="password"
           />
         </div>
-        <button type="submit">
+        <button type="submit" className="submit-button sign-in-button uppercase">
           <FormattedMessage id="login.form.submit" />
         </button>
         {submitting && <Loading />}

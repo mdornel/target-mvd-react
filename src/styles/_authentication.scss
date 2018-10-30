@@ -1,0 +1,59 @@
+.app-logo-container,
+.header-title-container {
+  padding: 10px;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.sub-header-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.78;
+}
+
+.app-description {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.86;
+}
+
+[type='email'],
+[type='password'],
+select {
+  border: solid 1px black;
+  font-size: 10px;
+  height: 40px;
+  margin: 0 auto;
+  width: 190px;
+}
+
+.field-container { padding: 10px 0; }
+
+.submit-button {
+  background-color: black;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  height: 40px;
+  letter-spacing: 1.7px;
+  margin: 10px 0;
+  width: 190px;
+}
+
+.form-separator {
+  border: solid 0.5px black;
+  height: 0.5px;
+  width: 120px;
+}
+
+.sign-up-link,
+.sign-in-link {
+  color: black;
+  font-size: 11px;
+  font-weight: 600;
+}

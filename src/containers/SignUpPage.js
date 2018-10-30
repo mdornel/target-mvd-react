@@ -7,6 +7,7 @@ import { FormattedMessage } from 'react-intl';
 import { signUp } from 'actions/userActions';
 import SignUpForm from 'components/user/SignUpForm';
 import routes from 'constants/routesPaths';
+import AppPreview from '../components/common/AppPreview';
 
 class SignUpPage extends PureComponent {
   static propTypes = {
@@ -23,11 +24,19 @@ class SignUpPage extends PureComponent {
 
     return (
       <div>
-        <p><FormattedMessage id="signup.title" /></p>
-        <SignUpForm onSubmit={signUp} />
-        <Link to={routes.login}>
-          <FormattedMessage id="signup.signin" />
-        </Link>
+        <div className="landing-left-side">
+          <div>
+            <span className="header-title"><FormattedMessage id="signup.title" /></span>
+          </div>
+          <SignUpForm onSubmit={signUp} />
+          <hr className="form-separator" />
+          <Link to={routes.login} >
+            <div className="sign-in-link uppercase">
+              <FormattedMessage id="signup.signin" />
+            </div>
+          </Link>
+        </div>
+        <AppPreview />
       </div>
     );
   }
