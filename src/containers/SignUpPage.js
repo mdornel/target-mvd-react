@@ -26,7 +26,7 @@ class SignUpPage extends PureComponent {
       <div>
         <div className="landing-left-side">
           <div>
-            <span className="header-title"> SIGN UP </span>
+            <span className="header-title"><FormattedMessage id="signup.title" /></span>
           </div>
           <SignUpForm onSubmit={signUp} />
           <hr className="form-separator" />

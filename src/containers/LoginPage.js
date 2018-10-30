@@ -32,13 +32,13 @@ class LoginPage extends PureComponent {
             </div>
             <div>
               <div className="header-title-container">
-                <span className="header-title"> TARGET MVD </span>
+                <h1 className="header-title"><FormattedMessage id="login.header" /></h1>
               </div>
               <div className="sub-header-title-container">
-                <span className="sub-header-title"> Find people near you & Connect </span>
+                <h2 className="sub-header-title"><FormattedMessage id="login.sub-header" /></h2>
               </div>
               <div className="app-description-container">
-                <p className="app-description">Create a  target  wherever on the map, specify your interest: Travel, Dating, Music, etc and start connecting with others who share your interest.</p>
+                <p className="app-description"><FormattedMessage id="login.description" /></p>
               </div>
             </div>
           </div>

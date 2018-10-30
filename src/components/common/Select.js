@@ -5,6 +5,7 @@ class Select extends React.Component {
     super();
     this.handleOnChange = this.handleOnChange.bind(this);
   }
+
   handleOnChange(event) {
     this.props.input.onChange(event.target.value);
   }
@@ -19,10 +20,11 @@ class Select extends React.Component {
         {label && <label className="uppercase">{label}</label>}
         <select {...input} onChange={this.handleOnChange}>
           <option value="" disabled selected>SELECT YOUR GENDER</option>
-          {options.map((option, index) => (<option key={index} value={option.value}>{option.text}</option>))}
+          {options.map(({ value, text }, index) => (<option key={index} value={value}>{text}</option>))}
         </select>
       </div>
     );
   }
 }
+
 export default Select;

@@ -23,7 +23,7 @@ const messages = defineMessages({
 const options = [
   { value: 'female', text: 'Female' },
   { value: 'male', text: 'Male' }
-]
+];
 
 class SignUpForm extends PureComponent {
   static propTypes = {
