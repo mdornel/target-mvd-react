@@ -13,6 +13,7 @@ export default {
 
   'signup.title': 'SIGN UP',
   'signup.signin': 'Sign in',
+  'signup.form.name': 'Name',
   'signup.form.passconfirmation': 'Password confirmation',
   'signup.form.gender': 'Gender',
   'signup.form.submit': 'Sign up',
@@ -22,6 +23,7 @@ export default {
   'home.welcome': 'Welcome to React Redux Base',
 
   // errors
+  'username.presence': 'You must enter a username to continue',
   'email.presence': 'You must enter an email to continue',
   'email.invalid': 'You must enter a valid email',
   'password.presence': 'You must enter a password to continue',
