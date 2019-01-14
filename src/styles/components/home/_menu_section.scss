@@ -1,0 +1,58 @@
+.menu-section-container {
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-avatar-image-container {
+  position: relative;
+}
+
+.avatar-circle {
+  background-color: $bright-sky-blue;
+  border-radius: 100%;
+  height: 6.4rem;
+  margin: 1rem auto;
+  object-fit: contain;
+  width: 6.5rem;
+}
+
+.avatar-logo-image {
+  margin-top: .6rem;
+}
+
+.user-name-container {
+  font-size: 14px;
+}
+
+.action-links-container,
+button.logout-link {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+
+  :hover {
+    color: $bright-sky-blue;
+  }
+}
+
+.empty-state-text-container {
+  font-size: 18px;
+  padding: 50px 0;
+}
+
+.popular-targets-text {
+  font-size: 15px;
+}
+
+.popular-targets-container {
+  font-size: 13px;
+  padding: 15px 0;
+}
+
+.menu-footer {
+  bottom: 0;
+  height: 30px;
+  margin: 0 auto;
+  width: 50px;
+}

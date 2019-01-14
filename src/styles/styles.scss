@@ -2,6 +2,7 @@
 @import 'settings';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import 'authentication';
+@import 'components/home/menu_section';
 
 body { font-family: 'Open Sans', sans-serif; }
 
@@ -33,10 +34,12 @@ body { font-family: 'Open Sans', sans-serif; }
 
 .home-left-section {
   float: left;
+  height: 100vh;
   width: 25%;
 }
 
 .map-canvas {
   float: right;
+  height: 100vh;
   width: 75%;
 }

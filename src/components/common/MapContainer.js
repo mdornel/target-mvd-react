@@ -1,5 +1,5 @@
 import React from 'react';
-import { number, string } from 'prop-types';
+import { string } from 'prop-types';
 import GoogleMapReact from 'google-map-react';
 import PositionMarker from 'components/common/PositionMarker';
 
@@ -44,8 +44,8 @@ class MapContainer extends React.Component {
 
 MapContainer.propTypes = {
   key: string,
-  lat: number.isRequired,
-  lng: number.isRequired
+  lat: string.isRequired,
+  lng: string.isRequired
 };
 
 export default MapContainer;
