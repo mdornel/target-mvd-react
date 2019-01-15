@@ -14,6 +14,7 @@ import { validations, signUp } from 'utils/constraints';
 import Select from 'components/common/Select';
 
 const messages = defineMessages({
+  name: { id: 'signup.form.name' },
   email: { id: 'login.form.email' },
   password: { id: 'login.form.password' },
   passConfirmation: { id: 'signup.form.passconfirmation' },
@@ -37,6 +38,14 @@ class SignUpForm extends PureComponent {
 
     return (
       <form onSubmit={handleSubmit}>
+        <div className="field-container" >
+          <Field
+            name="username"
+            label={intl.formatMessage(messages.name)}
+            component={Input}
+            type="text"
+          />
+        </div>
         <div className="field-container" >
           <Field
             name="email"
