@@ -6,19 +6,15 @@ import LogoutButton from '../user/LogoutButton';
 import HomeEmptyState from './HomeEmptyState';
 
 class MenuProfileSection extends PureComponent {
-  static propTypes = {
-    user: object.isRequired
-  };
-
   render() {
-    const { user } = this.props;
+    const { user: { username } } = this.props;
 
     return (
       <div>
         <MenuAvatar />
         <div className="menu-actions-container">
           <div className="user-name-container">
-            <span>{ user.username }</span>
+            <span>{ username }</span>
           </div>
           <div className="action-links-container">
             <span> Edit / </span>
@@ -31,6 +27,10 @@ class MenuProfileSection extends PureComponent {
     );
   }
 }
+
+MenuProfileSection.propTypes = {
+  user: object.isRequired
+};
 
 const mapState = state => ({
   user: state.getIn(['session', 'user']).toJS()

@@ -18,23 +18,25 @@ class MapContainer extends React.Component {
 
   componentDidMount() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        this.setState({ center: { lat: position.coords.latitude, lng: position.coords.longitude } });
+      navigator.geolocation.getCurrentPosition(({ coords: { latitude, longitude } }) => {
+        this.setState({ center: { lat: latitude, lng: longitude } });
       });
     }
   }
 
   render() {
+    const { center, zoom } = this.state;
+
     return (
-      <div style={{ height: '100vh', width: '100%' }}>
+      <div className="google-maps-container">
         <GoogleMapReact
           bootstrapURLKeys={{ key: this.props.key }}
-          center={this.state.center}
-          defaultZoom={this.state.zoom}
+          center={center}
+          defaultZoom={zoom}
         >
           <PositionMarker
-            lat={this.state.center.lat}
-            lng={this.state.center.lng}
+            lat={center.lat}
+            lng={center.lng}
           />
         </GoogleMapReact>
       </div>
