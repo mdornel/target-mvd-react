@@ -18,9 +18,12 @@ export default {
   'signup.form.gender': 'Gender',
   'signup.form.submit': 'Sign up',
 
-  'logout.button': 'LOGOUT',
+  'logout.button': 'logout',
 
   'home.welcome': 'Welcome to React Redux Base',
+  'home.header': 'TARGET',
+  'home.emptyState': 'Create your first target by clicking wherever on the map.',
+  'home.popularTargets': 'Psss!, these are the most popular targets:',
 
   // errors
   'username.presence': 'You must enter a username to continue',

@@ -36,6 +36,7 @@
   "license": "MIT",
   "dependencies": {
     "foundation-sites": "6.4.4-rc1",
+    "google-map-react": "1.0.9",
     "history": "4.7.2",
     "humps": "2.0.1",
     "immutable": "3.8.2",
